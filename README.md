@@ -1,6 +1,6 @@
 # MovieSearch
 
-MovieSearch es una aplicación de Android que te permite buscar y explorar películas. Utiliza la API de [The Movie Database (TMDb)](https://www.themoviedb.org/documentation/api) para obtener información sobre películas populares, próximos estrenos, y más.
+MovieSearch es una aplicación de Android que te permite explorar películas.
 
 ## Funcionalidades
 
