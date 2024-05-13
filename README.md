@@ -12,9 +12,10 @@ MovieSearch es una aplicación de Android que te permite explorar películas.
 ## Instalación
 
 1. Clona este repositorio en tu máquina local utilizando Git:
-
+'''
    bash
    git clone https://github.com/noscriptph/MovieSearch.git
+'''
 
 2. Abre el proyecto en Android Studio.
 
