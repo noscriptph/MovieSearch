@@ -30,6 +30,7 @@ class PeliculaAdapter : RecyclerView.Adapter<PeliculaAdapter.PeliculaViewHolder>
     var onEmailIconClickListener: ((Pelicula) -> Unit)? = null
     var onShareIconClickListener: ((Pelicula) -> Unit)? = null
 
+
     var peliculas = mutableListOf<Pelicula>()
         set(value) {
             field = value
@@ -92,15 +93,15 @@ class PeliculaAdapter : RecyclerView.Adapter<PeliculaAdapter.PeliculaViewHolder>
          */
         fun bind(pelicula: Pelicula) {
             with(bindingItem) {
+
                 anioTxt.text = pelicula.anio.toString()
                 tituloTxt.text = pelicula.titulo
                 categoriaTxt.text = pelicula.genero
                 descripcionTxt.text = pelicula.descripcion
-
                 // Maneja el clic en el título para expandir o contraer la descripción
                 tituloTxt.setOnClickListener {
                     descripcionTxt.visibility =
-                        if (descripcionTxt.visibility == android.view.View.VISIBLE) android.view.View.GONE else android.view.View.VISIBLE
+                        if (descripcionTxt.visibility == android.view.View.VISIBLE ) android.view.View.GONE else android.view.View.VISIBLE
                 }
             }
         }

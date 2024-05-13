@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MovieSearch</string>
+    <string name="descripci_n_de_la_pel_cula">Descripción de la película</string>
+    <string name="descripcion"> </string>
+    <string name="anio_de_estreno">Año de estreno</string>
+    <string name="titulo_de_la_pelicula">Título de la película</string>
+    <string name="categoria">Categoría</string>
+    <string name="compartir">Compartir</string>
+    <string name="no_hay_peliculas_disponibles">No hay películas disponibles</string>
+    <string name="listado_de_peliculas">Listado de Películas</string>
 </resources>

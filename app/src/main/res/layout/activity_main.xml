@@ -8,74 +8,84 @@
     tools:context=".MainActivity">
 
     <!-- Título para las secciones -->
-    <TextView
-        android:id="@+id/tituloSecciones"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Listado de Películas"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Subtítulo sobre el RecyclerView -->
     <LinearLayout
-        android:id="@+id/subtitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00B8D4"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text="Año de estreno"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:gravity="center"
-            android:text="Título de la película"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Categoría"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textAlignment="textEnd"
-            android:textColor="@color/black"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="Compartir"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_peliculas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="56dp"
-    tools:listitem="@layout/pelicula_item"/>
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloSecciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6200EA"
+            android:gravity="center"
+            android:text="@string/listado_de_peliculas"
+            android:textColor="#7CB342"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00B8D4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/anio_de_estreno"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:text="@string/titulo_de_la_pelicula"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/categoria"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/compartir"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_peliculas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            tools:listitem="@layout/pelicula_item" />
+
+    </LinearLayout>
+
+    <!-- Subtítulo sobre el RecyclerView -->
 
     <TextView
         android:id="@+id/empty"
@@ -84,7 +94,7 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:text="No hay películas disponibles"
+        android:text="@string/no_hay_peliculas_disponibles"
         android:gravity="center"
         android:layout_gravity="center"
         android:visibility="gone"/>
